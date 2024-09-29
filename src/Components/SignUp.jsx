@@ -17,7 +17,7 @@ const SignUp =()=>{
          </form>
 
          <form className='mt-6'>
-         <input type="date" placeholder=" نام" className="border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
+         <input type="date" className="border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
          </form>
 
          <form className='mt-6'>
