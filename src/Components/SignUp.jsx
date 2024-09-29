@@ -3,9 +3,27 @@
 
 const SignUp =()=>{
     return(
-        <div className="w-80 h-64 border border-black border-solid object-center">
-         
-            <input type="text" placeholder="شماره همراه" className="rounded relative left-10"></input>
+        <div className="mt-5 ml-5">
+         <form>
+         <input type="text" placeholder="...شماره همراه" className="border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
+         </form>
+
+         <form className='mt-6'>
+         <input type="password" placeholder="رمز ورود " className="border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
+         </form>
+
+         <form className='mt-6'>
+         <input type="text" placeholder=" نام" className="border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
+         </form>
+
+         <form className='mt-6'>
+         <input type="date" placeholder=" نام" className="border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
+         </form>
+
+         <form className='mt-6'>
+         <input type="radio" name='radio' className="border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
+         </form>
+            
         
         </div>
     )
