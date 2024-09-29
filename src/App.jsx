@@ -7,7 +7,7 @@ import './App.css';
 
 const App = ()=>{
   return (
-    <div className='App'>
+    <div className='w-28 h-28 border-black border-2'>
     </div>
   )
   
