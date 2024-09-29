@@ -1,4 +1,5 @@
 import './App.css';
+import SignUp from './Components/SignUp';
 // import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
@@ -7,8 +8,8 @@ import './App.css';
 
 const App = ()=>{
   return (
-    <div className='w-28 h-28 border-black border-2'>
-      divv
+    <div className=''>
+      <SignUp />
     </div>
   )
   
