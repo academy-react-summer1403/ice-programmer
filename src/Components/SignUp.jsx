@@ -1,63 +1,57 @@
 // import { Fragment } from "react"
 import { useState } from "react"
-import {Formik, Form} from 'formik';
+import {Formik, Form, Field, ErrorMessage} from 'formik';
+import * as yup from 'yup';
 
 
 const SignUp =()=>{
 
-    const [PhoneNumber, setPhoneNumber] = useState("")
-    console.log(PhoneNumber)
+    const validations = yup.object().shape({
+        phoneNumber:yup.string().required("شماره تماس ضروری است"),
+        password:yup.string().required("این فیلد اجباری است"),
+        name:yup.string().required("این فیلد اجباری است"),
+        date:yup.string().required("این فیلد اجباری است")
+    })
 
-    const [Password, setPassword] = useState("")
-    console.log(Password)
-
-    const [Name, setName] = useState("")
-    console.log(Name)
-
-    const [Date, setDate] = useState("")
-    console.log(Date)
-
-    const onSubmit =(event)=>{
-        event.preventDefault();
-        console.log('Form submited', Password, Name, Date, PhoneNumber)
+    const onSubmit =(values)=>{
+        console.log('Form submited', values)
     }
 
 
     return(
         <div className="mt-5 ml-5">
-            <Formik>
-                <Form>
-                    <input 
+            <Formik 
+            initialValues={{phoneNumber:'', password:'', name:'', date:''}} 
+            onSubmit={(values)=>onSubmit(values)}
+            validationSchema={validations}>
+            
+                <Form className="">
+                    <Field 
                     type="text" 
-                    name="PhoneNumber" 
+                    name="phoneNumber" 
                     placeholder="...شماره همراه"
-                    value={PhoneNumber}
-                    onChange={(e)=>setPhoneNumber(e.target.value)}
-                    className=" ml-4 d-rtl border border-solid border-gray p-3 rounded-xl w-60 shadow-md hover:shadow-purple-500 "></input>
-                    
-                
-                    <input 
+                    className=" ml-4 d-rtl border border-solid border-gray p-3 rounded-xl w-60 shadow-md hover:shadow-purple-500 " />
+                    <ErrorMessage name="phoneNumber" component={'p'} className=""/>
+
+                    <Field 
                     type="password" 
                     name="password" 
-                    placeholder="رمز ورود " 
-                    value={Password}
-                    onChange={(e)=>setPassword(e.target.value)} 
-                    className="ml-4 border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
-                    
-                    <input 
+                    placeholder="رمز ورود "
+                    className="ml-4 border border-solid border-gray p-3 rounded-xl w-60 shadow-md " />
+                    <ErrorMessage name="password" component={'p'} />
+
+                    <Field 
                     type="text" 
                     name="name" 
                     placeholder=" نام" 
-                    value={Name}
-                    onChange={(e)=>setName(e.target.value)}
-                    className="ml-4 border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
-                    
-                    <input 
+                    className="ml-4 border border-solid border-gray p-3 rounded-xl w-60 shadow-md "/>
+                    <ErrorMessage name="name" component={'p'}/>
+
+                    <Field 
                     type="date" 
                     name="date" 
-                    value={Date}
-                    onChange={(e)=>setDate(e.target.value)}
-                    className="ml-4 border border-solid border-gray p-3 rounded-xl w-60 shadow-md "></input>
+                    className="ml-4 border border-solid border-gray p-3 rounded-xl w-60 shadow-md "/>
+                    <ErrorMessage name="date" component={'p'}/>
 
                     <button type='Submit'>Submit</button>
                 </Form>
