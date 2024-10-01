@@ -14,8 +14,8 @@ const App = ()=>{
     <div>
       {/* <SignUp /> */}
       {/* <FormikInput /> */}
-      {/* <Header /> */}
-      <Footer />
+      <Header />
+      {/* <Footer /> */}
 
     </div>
   )
