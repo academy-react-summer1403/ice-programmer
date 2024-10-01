@@ -18,7 +18,8 @@ const SignUp =()=>{
     }
 
 
-    return(
+    return( 
+                    
         <div className="mt-5 ml-5">
             <Formik 
             initialValues={{phoneNumber:'', password:'', name:'', date:''}} 
@@ -27,7 +28,7 @@ const SignUp =()=>{
             
                 <Form className="">
                     <Field 
-                    type="text" 
+                    type="text"
                     name="phoneNumber" 
                     placeholder="...شماره همراه"
                     className=" ml-4 d-rtl border border-solid border-gray p-3 rounded-xl w-60 shadow-md hover:shadow-purple-500 " />
