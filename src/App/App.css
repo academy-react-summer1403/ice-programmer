@@ -1,8 +1,26 @@
+@font-face{
+	src:url("../public/fonts/IranSans.ttf");
+	font-family:sans;
+}
+@font-face{
+	src:url("../public/fonts/Mj flow.ttf");
+	font-family:mj;
+}
+@font-face{
+	src:url("../public/fonts/Yekan.ttf");
+	font-family:yek;
+}
+@font-face{
+	src:url("../public/fonts/Mitra.ttf");
+	font-family:mitra;
+}
 #root {
   /* max-width: 1280px; */
   margin: 0;
   padding: 0;
+  direction: rtl;
   /* text-align: center; */
+  font-family:sans ;
 }
 .App{
   text-align: center;
