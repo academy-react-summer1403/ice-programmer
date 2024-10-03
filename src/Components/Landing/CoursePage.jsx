@@ -53,11 +53,11 @@ function CoursePage() {
                 </div>
             </div>
             <div className='w-[290px] h-96 mt-[19px] ml-4 rounded-[20px] bg-white'>
-                <ul className='w-[93%]' >فیلترها
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul className='w-[93%] m-[5px_auto]' >فیلترها
+                    <li className=" mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
+                    <li className="mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
+                    <li className="mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
+                    <li className=" mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
                 </ul>
             </div>
         </div>
