@@ -12,7 +12,7 @@ function CoursePage() {
             <div className='w-[100%] h-[115px] bg-white rounded-[20px] flex items-center mt-[10px] gap-5'>
                 <input className='p-5 mr-[1%] bg-[url(src/assets/search.svg)] bg-no-repeat bg-left text-base font-bold [background-size:35px]' type='text' placeholder='جستجوی دوره' name='SerachCourse'  ></input>
                 
-                <h1>مرتب سازی</h1>
+                <h1 className="text-[18px] font-bold">مرتب سازی</h1>
                 <a href="#">جدیدترین</a>
                 <a href="#">پرفروش ترین</a>
                 <a href="#">گران ترین</a>
