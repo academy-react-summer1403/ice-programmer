@@ -52,7 +52,7 @@ function CoursePage() {
                     <span className="relative top-16 right-[120px] text-red-700">!رایگان</span>
                 </div>
             </div>
-            <div className='w-[290px] h-96 mt-[19px] ml-4 rounded-[20px] bg-white'>
+            <div className='w-[310px] h-96 mt-[19px] ml-5 rounded-[20px] bg-white'>
                 <ul className='w-[93%] m-[5px_auto]' >فیلترها
                     <li className=" mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
                     <li className="mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
