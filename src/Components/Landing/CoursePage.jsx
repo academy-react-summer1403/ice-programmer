@@ -29,7 +29,21 @@ function CoursePage() {
             </div>
             <div className='w-[310px] h-96 mt-[19px] ml-5 rounded-[20px] bg-white'>
                 <ul className='w-[93%] m-[5px_auto]' >فیلترها
-                    <li className=" mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
+                    <li className=" mt-3 border border-[#ddd] p-5 rounded-[13px]">
+                        <Field type="checkbox" id="c1" name="na" className='hidden' checked />
+                        <label htmlFor="c1" className='cursor-pointer block'><span className="tip">  دسته بندی </span></label>
+                        <div className="h-[auto]">
+                            
+                            <Field type="radio" id="cat1" name="ca" className='hidden' />
+                            <label htmlFor="cat1" className='block'> فیلتر یک </label>
+                            
+                            <Field type="radio" id="cat2" name="ca" className='hidden'/>
+                            <label htmlFor="cat2" className='block'> فیلتر دو </label>	
+                        
+                            <Field type="radio" id="cat3" name="ca" checked className='hidden'/>
+                            <label htmlFor="cat3" className='block'> فیلتر سه </label>			
+                        </div>
+                    </li>
                     <li className="mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
                     <li className="mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
                     <li className=" mt-3 border border-[#ddd] p-5 rounded-[13px]"></li>
