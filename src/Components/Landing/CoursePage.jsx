@@ -14,7 +14,7 @@ function CoursePage() {
             <div className='w-[100%] h-[115px] bg-white rounded-[20px] flex items-center mt-[10px] gap-5'>
                 <Field className='p-5 mr-[1%] bg-[url(src/assets/search.svg)] bg-no-repeat bg-left text-base font-bold [background-size:35px] shadow-inner shadow-slate-400 rounded-xl' type='text' placeholder='جستجوی دوره' name='SerachCourse'  ></Field>
                 
-                <h1 className="text-[18px] font-bold">مرتب سازی</h1>
+                <div className="text-[18px] font-bold">مرتب سازی</div>
                 <LinkComponent topic={'جدیدترین'} />
                 <LinkComponent topic={'پرفروش ترین'} />
                 <LinkComponent topic={'گران ترین'} />
