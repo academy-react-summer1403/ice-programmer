@@ -36,8 +36,6 @@ function CoursePage() {
             </div>
         </div>
         </Formik>
-        
-        
     </div>
   )
 } 
