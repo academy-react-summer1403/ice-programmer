@@ -9,7 +9,6 @@ function LinkComponent({topic, id}) {
                 <Field id={id} type="radio" name="sortGroup" className=' hidden' checked /> 
                 <label htmlFor={id} className='cursor-pointer checked:[color-red_font-bold]'>{topic}</label>
             </Form>
-            
         </Formik>
         
     </div>
