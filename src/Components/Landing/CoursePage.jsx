@@ -15,10 +15,10 @@ function CoursePage() {
                 <Field className='p-5 mr-[1%] bg-[url(src/assets/search.svg)] bg-no-repeat bg-left text-base font-bold [background-size:35px] shadow-inner shadow-slate-400 rounded-xl' type='text' placeholder='جستجوی دوره' name='SerachCourse'  ></Field>
                 
                 <div className="text-[18px] font-bold">مرتب سازی</div>
-                <LinkComponent topic={'جدیدترین'} />
-                <LinkComponent topic={'پرفروش ترین'} />
-                <LinkComponent topic={'گران ترین'} />
-                <LinkComponent topic={'ارزان ترین'} />
+                <LinkComponent id={'LastProduct'} topic={'جدیدترین'} />
+                <LinkComponent id={'BestSelling'} topic={'پرفروش ترین'} />
+                <LinkComponent id={'Expensive'} topic={'گران ترین'} />
+                <LinkComponent id={'Cheap'} topic={'ارزان ترین'} />
             </div>
             <div className='w-[74%] h-auto mt-6 pt-5 flex flex-row flex-wrap justify-between gap-y-24'>
                 <CourseCard />
