@@ -1,6 +1,6 @@
 import {Formik, Field} from 'formik';
 import CourseCard from './CourseCard';
-import { Link } from 'react-router-dom';
+import LinkComponent from './LinkComponent';
 
 function CoursePage() {
   return (
@@ -15,10 +15,10 @@ function CoursePage() {
                 <Field className='p-5 mr-[1%] bg-[url(src/assets/search.svg)] bg-no-repeat bg-left text-base font-bold [background-size:35px] shadow-inner shadow-slate-400 rounded-xl' type='text' placeholder='جستجوی دوره' name='SerachCourse'  ></Field>
                 
                 <h1 className="text-[18px] font-bold">مرتب سازی</h1>
-                <a href="">جدیدترین</a>
-                <a href="">پرفروش ترین</a>
-                <a href="">گران ترین</a>
-                <a href="">ارزان ترین</a>
+                <LinkComponent topic={'جدیدترین'} />
+                <LinkComponent topic={'پرفروش ترین'} />
+                <LinkComponent topic={'گران ترین'} />
+                <LinkComponent topic={'ارزان ترین'} />
             </div>
             <div className='w-[74%] h-auto mt-6 pt-5 flex flex-row flex-wrap justify-between gap-y-24'>
                 <CourseCard />
