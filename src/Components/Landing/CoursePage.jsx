@@ -7,9 +7,9 @@ const CoursePage=()=> {
 
 
     const[Course, setCourse]=useState([
-        {image:'public/Pics/person.png', topic:'آموزش ری اکت 1', explain:'آموزش می دهیم. آموزش نمی دهیم', teacher:'استاد یک',time:'12:12:12', price:'رایگان!'},
-        {image:'public/Pics/person.png',topic:'آموزش ری اکت 2', explain:'آموزش می دهیم. آموزش می دهیم', teacher:'استاد دو',time:'12:12:12', price:'رایگان!'},
-        {image:'public/Pics/person.png',topic:'آموزش ری اکت 3', explain:'آموزش می دهیم. آموزش نمی دهیم', teacher:'استاد سه',time:'12:12:12', price:'رایگان!'}
+        {image:'public/Pics/01.jpg', topic:'آموزش ری اکت 1', explain:'آموزش می دهیم. آموزش نمی دهیم', teacher:'استاد یک',time:'12:12:12', price:'رایگان!'},
+        {image:'public/Pics/01.jpg',topic:'آموزش ری اکت 2', explain:'آموزش می دهیم. آموزش می دهیم', teacher:'استاد دو',time:'12:12:12', price:'رایگان!'},
+        {image:'public/Pics/01.jpg',topic:'آموزش ری اکت 3', explain:'آموزش می دهیم. آموزش نمی دهیم', teacher:'استاد سه',time:'12:12:12', price:'رایگان!'}
     ])
 
   return (
@@ -117,7 +117,7 @@ const CoursePage=()=> {
   )
 } 
 
-export {CoursePage};
+export default CoursePage;
 
 
 
