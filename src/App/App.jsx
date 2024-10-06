@@ -1,5 +1,5 @@
-import Header from '../Components/Common/Header/Header';
-import Footer from '../Components/Common/Footer/Footer';
+// import Header from '../Components/Common/Header/Header';
+// import Footer from '../Components/Common/Footer/Footer';
 import './App.css';
 import CoursePage from '../Components/Landing/CoursePage';
 // import SignUp from '../Components/SignUp';
@@ -25,9 +25,3 @@ const App = ()=>{
 }
 
 export default App;
-
-
-
-
-
-
